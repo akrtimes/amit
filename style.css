@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+/* font-family: "Be Vietnam Pro", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-vilot: #7F00FF;
+    --iris: #5D3FD3;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    position: relative;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /* position:relative; */
+}
+
+/* css for nav-bar left section and right section ... */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-vilot);
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 2rem 0 rgba(127, 0, 255,0.3);
+    left: 0;
+    right: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.left-nav-bar {
+    display: flex;
+    align-items: center;
+    
+}
+#name-logo {
+    height: 4rem;
+}
+#full-name {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 2rem;
+    margin-left: -0.5rem;
+    color: white;
+    font-weight: bold;
+}
+.right-nav-bar {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items {
+    font-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.27s ease-in;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: white;
+}
+.nav-items:hover {
+    font-weight: bold;
+    color: white;
+
+}
+
+
+/* css for hero section  */
+.hero-section {
+    display: flex;
+    margin-top: 7.5rem;
+}
+
+/* hero section left css  */
+.hero-section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    margin-top: 3rem;
+}
+
+#hero-section-title {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.hero-section-heading {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.role {
+    color: var(--color-vilot);
+}
+
+.hero-section-description {
+    margin-top: 2rem;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.faded-text {
+    display: inline;
+    font-size: 6.2rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: rgb(231, 231, 231);
+    user-select: none;
+}
+
+.hire-me-btn {
+    position: relative;
+    padding: .75rem 1.25rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10rem;
+    background-color: var(--color-vilot);
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* hero section right css  */
+.hero-section-right {
+    position: relative;
+    width: 35%;
+}
+
+.hero-section-right-box {
+    height: 27rem;
+    width: 25rem;
+    position: relative;
+}
+
+.profile-picture {
+    height: 27rem;
+    padding: 2rem;
+    position: absolute;
+    animation-name: profile-picture-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes profile-picture-animation {
+    0% {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: grayscale(1);
+        /* box-shadow: 5px 5px 7px 0px #0000003f,-5px -5px 7px 0px #0000003f; */
+        transform: scale(0.9);
+        box-shadow: 2px 2px 10px rgb(69, 69, 69);
+    }
+
+    100% {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+}
+
+.profile-icon {
+    position: absolute;
+}
+
+#icon-zigzag {
+    top: 1.5rem;
+    left: 0;
+    animation-name: profile-icon-zigzag;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes profile-icon-zigzag {
+    50% {
+        transform: translateX(1.5rem);
+    }
+}
+
+#icon-cube {
+    top: 0;
+    right: 0;
+    animation-name: profile-icon-cube;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes profile-icon-cube {
+    50% {
+        transform: rotateY(180deg);
+    }
+}
+
+#icon-plus {
+    top: 0;
+    left: 50%;
+    animation-name: profile-icon-plus;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes profile-icon-plus {
+    50% {
+        transform: translateY(1.5rem);
+    }
+}
+
+#icon-circle {
+    bottom: 1rem;
+    left: 1rem;
+    animation-name: profile-icon-circle;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes profile-icon-circle {
+    50% {
+        transform: translate(-1rem, 1rem);
+    }
+}
+
+#icon-dots {
+    bottom: 0;
+    right: 0;
+    animation-name: profile-icon-dots;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes profile-icon-dots {
+    50% {
+        transform: translateY(-1.5rem);
+    }
+}

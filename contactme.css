@@ -1,0 +1,47 @@
+:root{
+    --color-vilot:#7F00FF;
+    --bright-purple:#BF40BF;
+    --iris:#5D3FD3;
+}
+.contact-me{
+    background-color: rgb(231, 231, 231);
+    margin-top: -5.45rem;
+    padding-bottom: 3.5rem;
+}
+.contact-me-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#contact-me-heading{
+    font-size: 5rem;
+    padding-top: 3rem;
+    color: var(--color-vilot);
+}
+.contact-me-description{
+    font-size: 3rem;
+    color: #343D68AA;
+    /* padding-top: 1.2rem; */
+}
+#contact-me-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding-top: 2.4rem;
+    width: 60%;
+    margin: 0 auto;
+
+}
+.form-field{
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    border: none;
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
+    box-shadow: 0px 0px 8px #1f1f1f;
+}
+.text-area-class{
+    height: 8rem;
+}
+#form-submit-btn{
+    width: 10rem;
+}

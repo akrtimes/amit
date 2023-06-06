@@ -1,0 +1,39 @@
+:root {
+    --color-vilot: #7F00FF;
+    --iris: #5D3FD3;
+}
+.footer-section{
+    background-color: #343d68;
+}
+.footer-container{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 5rem;
+    
+}
+.name-footer{
+    font-size: 4rem;
+    color: #535C87;
+}
+.footer-link{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+.footer-link:hover{
+    color: red;
+}
+.footer-icon{
+    height: 2rem;
+    color: red;
+}
+.footer-icon path {
+    fill: #ed6866;
+}
+.left-footer{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
